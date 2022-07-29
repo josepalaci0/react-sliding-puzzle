@@ -1,4 +1,4 @@
-import { TILE_COUNT, GRID_SIZE } from "./constants"
+import { TILE_COUNT, GRID_SIZE } from "./constants";
 
 // Credits to https://codepen.io/unindented/pen/QNWdRQ
 export function isSolvable(tiles) {
@@ -51,6 +51,7 @@ export function shuffle(tiles) {
     ? shuffledTiles
     : shuffle(shuffledTiles);
 }
+//
 
 export function canSwap(srcIndex, destIndex) {
   const { row: srcRow, col: srcCol } = getMatrixPosition(srcIndex);
